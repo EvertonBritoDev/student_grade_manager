@@ -6,7 +6,7 @@ const grades = [];
 
 const server = http.createServer((request, response) => {
   const { method, url } = request;
-  let body = "";
+  let body = [];
 
   request.on("data", (chunk) => {
     body += chunk.toString();
